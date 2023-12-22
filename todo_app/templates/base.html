@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Django To-do Lists</title>
+    
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    {% load static %}
+    {% load static %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/override.css' %}">
+    {{ form.media }}
+</head>
+
+<body>
+    <!-- <img src="{% static 'images/OIP.jpg' %}" id="main-jpg" alt='Backdrop"> -->
+    <div class="parent-container">
+        <div class="container">
+            <div>
+                <h1 onclick="location.href='{% url "index" %}'">
+                    Django To-do Lists
+                </h1>
+            </div>
+            <div>
+                {% block content %}
+                This content will be replaced by different html code for each page.
+                {% endblock %}
+                <br><br>
+                <img src="{% static 'images/todo_backdrop.jpg' %}" alt="Backdrop" onclick="location.href='{% url "index" %}'">
+            </div> 
+        </div>
+    </div>
+</body>
+
+</html>
