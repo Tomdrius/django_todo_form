@@ -1,17 +1,19 @@
-Django Todo App
+# Django Todo App
 
-This is a simple Django application that displays a todo form. The form allows users to enter a task, a deadline, and a status. The status can be either "pending" or "completed".
+This simple Django application allows you to manage your tasks. It provides a form where you can enter a task, specify a deadline, and set the task's status to either "pending" or "completed".
 
-Requirements
+## Requirements
 
-Python 3.8 or higher
-Django 3.2 or higher
+* Python 3.8 or higher
+* Django 3.2 or higher
 
-Installation
+## Installation
 
-Clone the repository:
-git clone https://github.com/Tomdrius/django_todo_form/
-Change directory to the project directory:
+1. Clone the repository to your local machine:
+
+git clone [https://github.com/Tomdrius/django_todo_form/](https://github.com/Tomdrius/django_todo_form/): [https://github.com/Tomdrius/django_todo_form/](https://github.com/Tomdrius/django_todo_form/)
+
+2. Change directory to the project directory:
 cd django-todo-app
 Install the dependencies:
 pip install -r requirements.txt
